@@ -19,7 +19,7 @@
     gtag('js', new Date());
     gtag('config', 'G-291QNWCB1H');
   </script>
-  <meta name="description" content="Lesson 5: Plan a simple file layout for your countdown page — HTML, CSS, and JavaScript — before you write code.">
+  <meta name="description" content="Lesson 5: Plan your countdown file layout, let Cursor create css and js folders with the correct names, then explore the project in Explorer.">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/lesson.css">
 </head>
@@ -28,7 +28,7 @@
     <p class="eyebrow"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Hello World</a></p>
     <p class="lesson-num">Lesson 05</p>
     <h1>Plan the files</h1>
-    <p class="lesson-goal">Decide which files you need — and what each one does — before you build.</p>
+    <p class="lesson-goal">Decide which files you need, let Cursor create the folders with the right names, then explore your project in Explorer.</p>
   </header>
 
   <main class="container">
@@ -88,45 +88,60 @@
         <strong>You do not need</strong> <code>lessons/</code> or <code>assets/</code> for your own countdown-only site.
       </p>
 
-      <h2>See your layout in Cursor’s Explorer</h2>
+      <h2>Let Cursor create the folders</h2>
       <p>
-        Windows File Explorer can be awkward for a full tree view. <strong>Cursor’s Explorer</strong>
-        (left sidebar) is easier: it shows your project folder, subfolders, and files in one place.
+        Folder names must match exactly what your HTML will reference later —
+        <code>css</code> and <code>js</code>, lowercase, no spaces.
+        A typo (for example <code>CSS</code> or <code>jss</code>) can break links in Lessons 06–08
+        with errors that are hard for beginners to trace.
+      </p>
+      <p>
+        For this step, <strong>ask Cursor to create the folders</strong> instead of typing names by hand.
+        You stay in control: review what Cursor proposes, then accept only the folders you planned.
       </p>
       <ol>
-        <li>Open your <code>hello-world</code> project (Lesson 04).</li>
+        <li>Open your <code>hello-world</code> project in Cursor (Lesson 04).</li>
+        <li>Open <strong>Chat</strong> (or Agent) with your project folder open.</li>
+        <li>Paste or type in chat: <em>Create two folders in this project: css and js. Do not add any files yet.</em></li>
+        <li>Read Cursor’s reply. If it offers to create extra files or folders you did not ask for, say no or edit the request.</li>
+        <li>Accept the change when you see only <code>css/</code> and <code>js/</code> (empty folders are fine for now).</li>
+      </ol>
+
+      <div class="practice-note">
+        <strong>Good practice:</strong> Before accepting changes from Cursor, ask: “Do I need this for version 1?”
+        For Lesson 05, you only need the two folders — not <code>style.css</code>, <code>countdown.js</code>, or extra config yet.
+        Those come in Lessons 06–08.
+      </div>
+
+      <h2>Explore your project in Cursor’s Explorer</h2>
+      <p>
+        After Cursor creates the folders, <strong>look at the tree yourself</strong> so you know where everything lives
+        before you add code. Windows File Explorer can be awkward for this; <strong>Cursor’s Explorer</strong>
+        (left sidebar) shows your project folder, subfolders, and files in one place.
+      </p>
+      <ol>
         <li>Click the <strong>Explorer</strong> icon at the top of the left sidebar (two-document icon).</li>
-        <li>Click the <strong>arrow</strong> next to the project name to expand it.</li>
-        <li>Expand <code>css</code>, <code>js</code>, and other folders to see what is inside.</li>
+        <li>Click the <strong>arrow</strong> next to your project name to expand it.</li>
+        <li>Confirm you see <code>css</code> and <code>js</code> — names spelled exactly as above.</li>
+        <li>Expand each folder. They may be empty until Lessons 06–08; that is expected.</li>
+        <li>Notice any files already in the project (for example <code>index.html</code> if you created it in Lesson 04).</li>
       </ol>
       <p>
         Toolbar at the top of Explorer: <strong>New File</strong>, <strong>New Folder</strong>,
         <strong>Refresh</strong>, and <strong>Collapse Folders</strong> (folds everything back).
+        You can use these later; for this lesson we rely on Cursor for folder names so they stay correct.
       </p>
 
       <figure class="figure">
         <img src="../assets/lessons/05/cursor-file-explorer-view.png"
-             alt="Cursor Explorer showing the hello-world project with folders expanded">
-        <figcaption>Cursor Explorer — your project folder, subfolders, and files in one tree</figcaption>
+             alt="Cursor Explorer showing the hello-world project with css and js folders expanded">
+        <figcaption>Cursor Explorer — expand <code>css</code> and <code>js</code> and confirm the names match your plan</figcaption>
       </figure>
 
       <p>
         <strong>Optional (Windows):</strong> In Command Prompt, <code>cd</code> to your project and run
-        <code>tree /F</code> for a text tree of all folders and files.
+        <code>tree /F</code> for a text tree of all folders and files. Compare it to Explorer — same structure, different view.
       </p>
-
-      <h2>Create the folders now (optional)</h2>
-      <p>If <code>css</code> and <code>js</code> do not exist yet:</p>
-      <ol>
-        <li>In <strong>Cursor Explorer</strong>, right-click your project folder → <strong>New Folder</strong> → <code>css</code></li>
-        <li>Repeat for <code>js</code></li>
-        <li>Or ask Cursor in chat: “Create css and js folders in this project” — then expand Explorer and verify</li>
-      </ol>
-
-      <div class="practice-note">
-        <strong>Good practice:</strong> Before accepting new files from Cursor, ask: “Do I need this for version 1?”
-        Extra frameworks, config files, and duplicate pages can wait.
-      </div>
 
       <nav class="lesson-nav" aria-label="Lesson navigation">
         <a href="04-open-project.html">← Previous: Open your first project</a>
