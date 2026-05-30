@@ -204,6 +204,16 @@
   line-height: 1.55;
 }
 
+.chat-prompt {
+  background: var(--bg);
+  border-left: 4px solid var(--blue);
+  margin: 12px 0 16px;
+  padding: 14px 16px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
 .practice-note {
   background: #f0fdf4;
   border: 1px solid #86efac;

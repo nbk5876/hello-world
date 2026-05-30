@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- -------------------------------------------------------------
+ Page Name: 06-first-html.html
+ Purpose:    Lesson 06 reference — Write your first HTML
+ Series:     Use Cursor to Say Hello World
+ URL:        https://nbk5876.github.io/hello-world/lessons/06-first-html.html
+ Created:    5/30/2026
+-------------------------------------------------------------- -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 06 — Write your first HTML · Hello World</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-291QNWCB1H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-291QNWCB1H');
+  </script>
+  <meta name="description" content="Lesson 6: Create index.html — the page structure for your midterm countdown. HTML only; CSS and JavaScript come in Lessons 07 and 08.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lesson.css">
+</head>
+<body>
+  <header class="page-header lesson-header">
+    <p class="eyebrow"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Hello World</a></p>
+    <p class="lesson-num">Lesson 06</p>
+    <h1>Write your first HTML</h1>
+    <p class="lesson-goal">Create <code>index.html</code> — the structure and words on your countdown page.</p>
+  </header>
+
+  <main class="container">
+    <div class="audience-tags" aria-label="NextDoor groups">
+      <span class="audience-tag rai">Responsible AI</span>
+      <span class="audience-tag npc">National Politics Chat</span>
+    </div>
+
+    <article class="card lesson-body">
+      <h2>What HTML does</h2>
+      <p>
+        HTML is the <strong>structure</strong> of a web page: headings, paragraphs, and placeholders
+        for content. It is not styling (that is CSS, Lesson 07) or the live day count (JavaScript, Lesson 08).
+        Today we create one file: <code>index.html</code> at the root of your project.
+      </p>
+
+      <h2>Ask Cursor to create the file</h2>
+      <p>
+        For this step, <strong>we ask Cursor to write the HTML</strong>. You review it before you accept.
+      </p>
+      <ol>
+        <li>Open your <code>hello-world</code> project in Cursor (Lesson 04).</li>
+        <li>Open <strong>Chat</strong> with the project folder open.</li>
+        <li>Paste or adapt this prompt:</li>
+      </ol>
+
+      <blockquote class="chat-prompt">
+        Create a file named index.html in the project root. It should be a simple midterm countdown page:
+        a main heading “Days until the 2026 midterms”, a paragraph with id="days-remaining" showing a dash
+        for now, and a line with the election date Tuesday, November 3, 2026. Use plain HTML only —
+        no CSS file and no JavaScript yet.
+      </blockquote>
+
+      <ol start="4">
+        <li>Read what Cursor proposes. Reject extra files (CSS, JS, config) if they appear — those come later.</li>
+        <li>Accept when you have a single new <code>index.html</code> in the project root.</li>
+        <li>In Explorer, confirm the file appears next to your <code>css</code> and <code>js</code> folders.</li>
+      </ol>
+
+      <h2>What you should see in the file</h2>
+      <p>A minimal page looks roughly like this (yours may differ slightly — that is OK if the ideas match):</p>
+
+      <pre class="file-tree"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Midterm Countdown&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Days until the 2026 midterms&lt;/h1&gt;
+  &lt;p id="days-remaining"&gt;—&lt;/p&gt;
+  &lt;p&gt;Tuesday, November 3, 2026&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+      <h3>Tags worth knowing</h3>
+      <ul>
+        <li><strong><code>&lt;h1&gt;</code></strong> — main heading on the page</li>
+        <li><strong><code>&lt;p&gt;</code></strong> — a paragraph</li>
+        <li><strong><code>id="days-remaining"</code></strong> — names this paragraph so JavaScript can update it in Lesson 08</li>
+        <li><strong><code>&lt;head&gt;</code></strong> — title and meta tags (not visible as body text)</li>
+        <li><strong><code>&lt;body&gt;</code></strong> — what the visitor actually sees</li>
+      </ul>
+
+      <figure class="figure placeholder">
+        Screenshot: index.html open in Cursor editor, or browser showing plain unstyled page<br>
+        <em>(Add image to assets/lessons/06/ when available)</em>
+      </figure>
+
+      <h2>Quick peek in the browser</h2>
+      <p>
+        Double-click <code>index.html</code> in Explorer, or right-click → <strong>Reveal in File Explorer</strong>
+        and open it in Chrome or Edge. You should see your heading and text — plain, unstyled. That is success for Lesson 06.
+        Lesson 09 goes deeper on preview; Lesson 07 adds styling.
+      </p>
+
+      <div class="practice-note">
+        <strong>Good practice:</strong> Open the file yourself and read the HTML line by line.
+        If you do not understand a tag, ask Cursor to explain it — do not accept a file you have not looked at.
+      </div>
+
+      <nav class="lesson-nav" aria-label="Lesson navigation">
+        <a href="05-plan-files.html">← Previous: Plan the files</a>
+        <a class="home-link" href="../index.html">All lessons</a>
+        <a href="07-add-css.html">Next: Add CSS →</a>
+      </nav>
+    </article>
+
+    <footer class="site-footer">
+      <p>Built with <a href="https://cursor.com" target="_blank" rel="noopener">Cursor</a> · Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+    </footer>
+  </main>
+</body>
+</html>

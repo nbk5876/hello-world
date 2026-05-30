@@ -78,7 +78,7 @@ hello-world/
 | 03 | Pick a real purpose | `lessons/03-pick-a-purpose.html` | Done |
 | 04 | Open first project | `lessons/04-open-project.html` | Done |
 | 05 | Plan the files | `lessons/05-plan-files.html` | Done |
-| 06 | First HTML | `lessons/06-first-html.html` | Not started |
+| 06 | First HTML | `lessons/06-first-html.html` | Done |
 | 07 | Add CSS | `lessons/07-add-css.html` | Not started |
 | 08 | JavaScript countdown | `lessons/08-countdown-js.html` | Not started |
 | 09 | Preview locally | `lessons/09-preview.html` | Not started |
