@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- -------------------------------------------------------------
+ Page Name: 03-pick-a-purpose.html
+ Purpose:    Lesson 03 reference — Pick a real purpose
+ Series:     Use Cursor to Say Hello World
+ URL:        https://nbk5876.github.io/hello-world/lessons/03-pick-a-purpose.html
+ Created:    5/30/2026
+-------------------------------------------------------------- -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 03 — Pick a real purpose · Hello World</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-291QNWCB1H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-291QNWCB1H');
+  </script>
+  <meta name="description" content="Lesson 3: Choose a small, real project — a midterm countdown page — and keep version 1 simple with static HTML, CSS, and JavaScript on GitHub Pages.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lesson.css">
+</head>
+<body>
+  <header class="page-header lesson-header">
+    <p class="eyebrow"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Hello World</a></p>
+    <p class="lesson-num">Lesson 03</p>
+    <h1>Pick a real purpose</h1>
+    <p class="lesson-goal">Choose something worth building — and small enough to finish.</p>
+  </header>
+
+  <main class="container">
+    <div class="audience-tags" aria-label="NextDoor groups">
+      <span class="audience-tag rai">Responsible AI</span>
+      <span class="audience-tag npc">National Politics Chat</span>
+    </div>
+
+    <article class="card lesson-body">
+      <h2>Why purpose matters</h2>
+      <p>
+        “Hello World” is not just text on a screen — it is proof that your tools work and that you can
+        ship something real. A clear purpose keeps you focused when Cursor suggests extra features you
+        do not need yet.
+      </p>
+
+      <h2>Our purpose for this series</h2>
+      <p>
+        We are building a <strong>live web page</strong> that shows
+        <strong>how many days remain until the November 3, 2026 midterm elections</strong>.
+        Anyone can open the link in a browser — no app to install.
+      </p>
+      <p>
+        See the working example on the home page:
+        <a href="../index.html">nbk5876.github.io/hello-world/</a>
+      </p>
+
+      <figure class="figure placeholder">
+        Screenshot: home page showing the midterm countdown number<br>
+        <em>(Add image to assets/lessons/03/ when available — optional)</em>
+      </figure>
+
+      <h2>Keep version 1 simple</h2>
+      <p>For the first version, we use only:</p>
+      <ul>
+        <li><strong>HTML</strong> — structure and content</li>
+        <li><strong>CSS</strong> — layout and readability</li>
+        <li><strong>JavaScript</strong> — update the day count automatically</li>
+      </ul>
+      <p>
+        That is <strong>static</strong> — no server code running when someone visits the page.
+        Hosting is free on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+      </p>
+
+      <div class="flow-diagram" role="img" aria-label="Browser loads HTML CSS and JS from GitHub Pages">
+        Visitor opens your link
+        <span class="arrow">→</span> Browser loads HTML, CSS, JS
+        <span class="arrow">→</span> Countdown appears
+        <span class="arrow">→</span> No server required
+      </div>
+
+      <h2>What you will build vs. this site</h2>
+      <p>
+        <strong>You build:</strong> one landing page with the countdown (a few files).
+      </p>
+      <p>
+        <strong>This site also has:</strong> lesson reference pages like the one you are reading now —
+        for the NextDoor series. You read them; you do not need to copy all twelve pages.
+      </p>
+
+      <h2>What we are not building (yet)</h2>
+      <p>These are fine ideas for later — not for version 1:</p>
+      <ul>
+        <li>User accounts or sign-in</li>
+        <li>A database (for example PostgreSQL)</li>
+        <li>Python on a server (for example Render)</li>
+        <li>Email reminders or custom domains</li>
+      </ul>
+      <p>
+        If you outgrow static pages, you can add a backend later — the same pattern many production
+        apps use: static site for the public page, server only when you need it.
+      </p>
+
+      <h2>Your turn</h2>
+      <p>
+        Following along? Adopt the same purpose: a midterm countdown page. Or pick another
+        <strong>small, dated, public</strong> goal (a birthday countdown, days until an event).
+        Write one sentence describing your page before you ask Cursor to code — it helps you stay in charge.
+      </p>
+
+      <div class="practice-note">
+        <strong>Good practice:</strong> When Cursor offers ten features at once, say no to most of them.
+        Ship a small page first; add complexity only when you know why you need it.
+      </div>
+
+      <nav class="lesson-nav" aria-label="Lesson navigation">
+        <a href="02-install-cursor.html">← Previous: Install Cursor</a>
+        <a class="home-link" href="../index.html">All lessons</a>
+        <a href="04-open-project.html">Next: Open your first project →</a>
+      </nav>
+    </article>
+
+    <footer class="site-footer">
+      <p>Built with <a href="https://cursor.com" target="_blank" rel="noopener">Cursor</a> · Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+    </footer>
+  </main>
+</body>
+</html>

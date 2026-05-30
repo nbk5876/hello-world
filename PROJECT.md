@@ -68,7 +68,7 @@ hello-world/
 |---|-------|------|--------|
 | 01 | Why Cursor? | `lessons/01-why-cursor.html` | Done |
 | 02 | Install Cursor | `lessons/02-install-cursor.html` | Done |
-| 03 | Pick a real purpose | `lessons/03-pick-a-purpose.html` | Not started |
+| 03 | Pick a real purpose | `lessons/03-pick-a-purpose.html` | Done |
 | 04 | Open first project | `lessons/04-open-project.html` | Not started |
 | 05 | Plan the files | `lessons/05-plan-files.html` | Not started |
 | 06 | First HTML | `lessons/06-first-html.html` | Not started |
