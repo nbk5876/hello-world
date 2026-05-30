@@ -4,3 +4,6 @@ Thumbs.db
 
 # NextDoor post drafts — instructor only, not for the public site
 nd-posts/
+
+# Visio source files — instructor only; export PNG to assets/lessons/ for the site
+docs/visio/

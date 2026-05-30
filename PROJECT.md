@@ -43,6 +43,12 @@ Readers **read** the lesson pages; they do **not** recreate them.
 - **Instructor drafts:** `nd-posts/lesson-NN-nextdoor.txt` (local only, gitignored)
 - Each ND file has RAI and NPC variants + intro line about the series
 
+## Visio documentation (instructor only)
+
+- **Source files:** `docs/visio/` (local only, gitignored)
+- **First diagram:** `docs/visio/image-workspace.vsdx`
+- **For lesson pages:** export PNG from Visio → `assets/lessons/NN/` (commit those exports)
+
 ## Project layout
 
 ```
@@ -54,6 +60,7 @@ hello-world/
 ├── css/lesson.css          # Lesson page styles
 ├── js/countdown.js         # Days until Nov 3, 2026
 ├── nd-posts/               # ND drafts (gitignored, local only)
+├── docs/visio/             # Visio .vsdx (gitignored, local only)
 ├── README.md               # Setup instructions
 └── PROJECT.md              # This file
 ```
