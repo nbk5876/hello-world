@@ -98,7 +98,8 @@ Only commit when explicitly requested.
 3. Add screenshot(s) to `assets/lessons/NN/` if available
 4. Link from `index.html` (change `coming-soon` → `is-live` with href)
 5. Create `nd-posts/lesson-NN-nextdoor.txt` (local only, do not commit)
-6. Commit and push public files
+6. Add a **Good practice** callout (`practice-note` class) where helpful — for all readers, not RAI-only
+7. Commit and push public files
 
 ## Local workspace
 

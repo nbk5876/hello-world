@@ -168,7 +168,7 @@
   line-height: 1.55;
 }
 
-.responsible-note {
+.practice-note {
   background: #f0fdf4;
   border: 1px solid #86efac;
   border-radius: var(--radius);
@@ -177,7 +177,7 @@
   margin: 16px 0;
 }
 
-.responsible-note strong {
+.practice-note strong {
   color: var(--green, #166534);
 }
 
