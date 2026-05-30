@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- -------------------------------------------------------------
+ Page Name: 05-plan-files.html
+ Purpose:    Lesson 05 reference — Plan the files
+ Series:     Use Cursor to Say Hello World
+ URL:        https://nbk5876.github.io/hello-world/lessons/05-plan-files.html
+ Created:    5/30/2026
+-------------------------------------------------------------- -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 05 — Plan the files · Hello World</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-291QNWCB1H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-291QNWCB1H');
+  </script>
+  <meta name="description" content="Lesson 5: Plan a simple file layout for your countdown page — HTML, CSS, and JavaScript — before you write code.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lesson.css">
+</head>
+<body>
+  <header class="page-header lesson-header">
+    <p class="eyebrow"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Hello World</a></p>
+    <p class="lesson-num">Lesson 05</p>
+    <h1>Plan the files</h1>
+    <p class="lesson-goal">Decide which files you need — and what each one does — before you build.</p>
+  </header>
+
+  <main class="container">
+    <div class="audience-tags" aria-label="NextDoor groups">
+      <span class="audience-tag rai">Responsible AI</span>
+      <span class="audience-tag npc">National Politics Chat</span>
+    </div>
+
+    <article class="card lesson-body">
+      <h2>Why plan first?</h2>
+      <p>
+        A small plan keeps Cursor (and you) from creating dozens of files you do not need.
+        For a static countdown page, three kinds of files are enough: structure, style, and behavior.
+      </p>
+
+      <h2>What you will build (follow-along)</h2>
+      <p>If you are building your own midterm countdown, start with this layout:</p>
+
+      <pre class="file-tree"><code>hello-world/
+├── index.html       ← the page people see
+├── css/
+│   └── style.css    ← colors, fonts, layout
+└── js/
+    └── countdown.js ← days-until-election math</code></pre>
+
+      <div class="flow-diagram" role="img" aria-label="Browser loads index.html, which links to CSS and JavaScript">
+        <strong>index.html</strong>
+        <span class="arrow">→</span> links to <strong>style.css</strong>
+        <span class="arrow">→</span> links to <strong>countdown.js</strong>
+        <span class="arrow">→</span> browser shows the countdown
+      </div>
+
+      <h2>What each file does</h2>
+      <ul>
+        <li><strong><code>index.html</code></strong> — Headline, countdown area, election date. The “document.”</li>
+        <li><strong><code>css/style.css</code></strong> — Makes the page readable and pleasant on phone and desktop.</li>
+        <li><strong><code>js/countdown.js</code></strong> — Calculates days until November 3, 2026 and puts the number on the page.</li>
+      </ul>
+      <p>
+        We create these files in Lessons <strong>06</strong> (HTML), <strong>07</strong> (CSS), and <strong>08</strong> (JavaScript).
+      </p>
+
+      <h2>About this site’s extra folders</h2>
+      <p>
+        The project that hosts <em>this</em> lesson series has more folders — because it is both a
+        countdown site <strong>and</strong> documentation for NextDoor:
+      </p>
+
+      <pre class="file-tree"><code>hello-world/              ← same repo on GitHub Pages
+├── index.html              ← countdown + lesson list
+├── lessons/                ← reference pages (01, 02, …)
+├── assets/lessons/         ← screenshots for lessons
+├── css/                    ← shared styles
+└── js/countdown.js</code></pre>
+
+      <p>
+        <strong>You do not need</strong> <code>lessons/</code> or <code>assets/</code> for your own countdown-only site.
+      </p>
+
+      <figure class="figure placeholder">
+        Screenshot: Explorer showing index.html, css, and js folders<br>
+        <em>(Add image to assets/lessons/05/ when available — optional)</em>
+      </figure>
+
+      <h2>Create the folders now (optional)</h2>
+      <p>In your project folder, you can create empty folders before the files exist:</p>
+      <ol>
+        <li>In Explorer (left sidebar), right-click your project → <strong>New Folder</strong> → name it <code>css</code></li>
+        <li>Repeat for <code>js</code></li>
+        <li>Or ask Cursor: “Create css and js folders in this project” — then check what it did</li>
+      </ol>
+
+      <div class="practice-note">
+        <strong>Good practice:</strong> Before accepting new files from Cursor, ask: “Do I need this for version 1?”
+        Extra frameworks, config files, and duplicate pages can wait.
+      </div>
+
+      <nav class="lesson-nav" aria-label="Lesson navigation">
+        <a href="04-open-project.html">← Previous: Open your first project</a>
+        <a class="home-link" href="../index.html">All lessons</a>
+        <a href="06-first-html.html">Next: Write your first HTML →</a>
+      </nav>
+    </article>
+
+    <footer class="site-footer">
+      <p>Built with <a href="https://cursor.com" target="_blank" rel="noopener">Cursor</a> · Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+    </footer>
+  </main>
+</body>
+</html>

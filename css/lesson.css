@@ -36,6 +36,33 @@
   margin-top: 0;
 }
 
+.lesson-body h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 16px 0 8px;
+  color: var(--navy);
+}
+
+.lesson-body pre.file-tree {
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin: 12px 0 16px;
+  overflow-x: auto;
+}
+
+.lesson-body pre.file-tree code {
+  display: block;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  background: transparent;
+  border: none;
+  padding: 0;
+  white-space: pre;
+}
+
 .lesson-body p,
 .lesson-body li {
   font-size: 14px;
