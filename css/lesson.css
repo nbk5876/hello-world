@@ -214,6 +214,19 @@
   color: var(--ink);
 }
 
+.approach-note {
+  background: #eff6ff;
+  border: 1px solid #93c5fd;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.approach-note strong {
+  color: #1e40af;
+}
+
 .practice-note {
   background: #f0fdf4;
   border: 1px solid #86efac;

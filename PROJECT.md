@@ -37,6 +37,20 @@ Same posts in both groups; each post links to a full reference page on this site
 
 Readers **read** the lesson pages; they do **not** recreate them.
 
+## Teaching approach (follow-along lessons)
+
+**Cursor creates all the code.** Readers run prompts in chat, review changes before accepting, and refresh the browser to see results.
+
+**These lesson pages explain what Cursor built** — file layout, HTML tags, CSS selectors, JavaScript logic — so readers understand, not so they type code by hand.
+
+| Reader does | Reader does not |
+|-------------|-----------------|
+| Paste prompts into Cursor chat | Write HTML, CSS, or JS manually |
+| Review and accept/reject changes | Hand-edit files (unless fixing a small mistake) |
+| Read the lesson page to learn what was created | Follow along by typing the sample code |
+
+Exceptions: **install Cursor**, **create/open an empty project folder**, and **GitHub setup** (Lessons 02, 04, 11–12) — those are setup steps outside the editor.
+
 ## NextDoor workflow
 
 - **Public site:** lesson reference pages only (no ND paste boxes on pages)
@@ -78,7 +92,7 @@ hello-world/
 | 03 | Pick a real purpose | `lessons/03-pick-a-purpose.html` | Done |
 | 04 | Open first project | `lessons/04-open-project.html` | Done |
 | 05 | Plan the files | `lessons/05-plan-files.html` | Done |
-| 06 | First HTML | `lessons/06-first-html.html` | Done |
+| 06 | Create first HTML | `lessons/06-first-html.html` | Done |
 | 07 | Add CSS | `lessons/07-add-css.html` | Done |
 | 08 | JavaScript countdown | `lessons/08-countdown-js.html` | Not started |
 | 09 | Preview locally | `lessons/09-preview.html` | Not started |
@@ -106,7 +120,8 @@ Only commit when explicitly requested.
 4. Link from `index.html` (change `coming-soon` → `is-live` with href)
 5. Create `nd-posts/lesson-NN-nextdoor.txt` (local only, do not commit)
 6. Add a **Good practice** callout (`practice-note` class) where helpful — for all readers, not RAI-only
-7. Commit and push public files
+7. Add **Cursor creates / you understand** framing (`approach-note`) on coding lessons (05–08+)
+8. Commit and push public files
 
 ## Local workspace
 
