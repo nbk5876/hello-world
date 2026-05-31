@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- -------------------------------------------------------------
+ Page Name: 07-add-css.html
+ Purpose:    Lesson 07 reference — Add CSS
+ Series:     Use Cursor to Say Hello World
+ URL:        https://nbk5876.github.io/hello-world/lessons/07-add-css.html
+ Created:    5/30/2026
+-------------------------------------------------------------- -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 07 — Add CSS · Hello World</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-291QNWCB1H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-291QNWCB1H');
+  </script>
+  <meta name="description" content="Lesson 7: Add css/style.css and link it from index.html — make your midterm countdown page readable and pleasant.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lesson.css">
+</head>
+<body>
+  <header class="page-header lesson-header">
+    <p class="eyebrow"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Hello World</a></p>
+    <p class="lesson-num">Lesson 07</p>
+    <h1>Add CSS</h1>
+    <p class="lesson-goal">Style your page — colors, fonts, and layout — by linking <code>css/style.css</code> from <code>index.html</code>.</p>
+  </header>
+
+  <main class="container">
+    <div class="audience-tags" aria-label="NextDoor groups">
+      <span class="audience-tag rai">Responsible AI</span>
+      <span class="audience-tag npc">National Politics Chat</span>
+    </div>
+
+    <article class="card lesson-body">
+      <h2>What CSS does</h2>
+      <p>
+        CSS is the <strong>look</strong> of your page: colors, fonts, spacing, and layout.
+        HTML (Lesson 06) holds the words; CSS makes them readable and pleasant on phone and desktop.
+        JavaScript (Lesson 08) will still handle the live day count — CSS does not change that logic.
+      </p>
+      <p>
+        Remember the three-piece diagram from Lesson 06: <code>index.html</code> stays at the center.
+        Today we add <code>css/style.css</code> and <strong>link</strong> it from your HTML.
+      </p>
+
+      <h2>How HTML connects to CSS</h2>
+      <p>
+        Inside the <code>&lt;head&gt;</code> of <code>index.html</code>, add one line that points to your stylesheet:
+      </p>
+
+      <pre class="file-tree"><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></pre>
+
+      <p>
+        The path <code>css/style.css</code> must match your folder name from Lesson 05 — lowercase
+        <code>css</code>, file named <code>style.css</code> inside it.
+      </p>
+
+      <h2>Ask Cursor to add the styling</h2>
+      <p>
+        For this step, <strong>we ask Cursor to create the CSS file</strong> and update <code>index.html</code>
+        with the link line above. You review before you accept.
+      </p>
+      <ol>
+        <li>Open your project and <code>index.html</code> from Lesson 06.</li>
+        <li>Open <strong>Chat</strong>.</li>
+        <li>Paste or adapt this prompt:</li>
+      </ol>
+
+      <blockquote class="chat-prompt">
+        Create css/style.css with clean, readable styling for my midterm countdown page: centered layout,
+        a pleasant background color, a large bold style for #days-remaining, and a readable font.
+        Add &lt;link rel="stylesheet" href="css/style.css"&gt; inside the head of index.html.
+        Do not add JavaScript yet.
+      </blockquote>
+
+      <ol start="4">
+        <li>Confirm Cursor creates only <code>css/style.css</code> and a small edit to <code>index.html</code> — not extra files.</li>
+        <li>Accept when the link path is exactly <code>css/style.css</code>.</li>
+        <li>Refresh your page in the browser — it should look styled, not plain black text on white.</li>
+      </ol>
+
+      <h2>What you might see in style.css</h2>
+      <p>A simple stylesheet could look like this (yours may differ — that is OK):</p>
+
+      <pre class="file-tree"><code>body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+  color: #111827;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #1a56a0;
+}
+
+#days-remaining {
+  font-size: 4rem;
+  font-weight: bold;
+}</code></pre>
+
+      <h3>Selectors worth knowing</h3>
+      <ul>
+        <li><strong><code>body</code></strong> — styles the whole page</li>
+        <li><strong><code>h1</code></strong> — styles your main heading</li>
+        <li><strong><code>#days-remaining</code></strong> — styles the paragraph with that id (the big number later)</li>
+      </ul>
+
+      <figure class="figure placeholder">
+        Screenshot: styled countdown page in the browser after CSS is linked<br>
+        <em>(Add image to assets/lessons/07/ when available)</em>
+      </figure>
+
+      <div class="practice-note">
+        <strong>Good practice:</strong> If styling does not appear, check the link in <code>index.html</code>
+        — wrong folder name or a typo in <code>href</code> is the most common mistake. Open DevTools (F12) only if
+        you are curious; fixing the path usually solves it.
+      </div>
+
+      <nav class="lesson-nav" aria-label="Lesson navigation">
+        <a href="06-first-html.html">← Previous: Write your first HTML</a>
+        <a class="home-link" href="../index.html">All lessons</a>
+        <a href="08-countdown-js.html">Next: Add JavaScript — the countdown →</a>
+      </nav>
+    </article>
+
+    <footer class="site-footer">
+      <p>Built with <a href="https://cursor.com" target="_blank" rel="noopener">Cursor</a> · Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+    </footer>
+  </main>
+</body>
+</html>
