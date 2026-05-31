@@ -51,6 +51,8 @@ Readers **read** the lesson pages; they do **not** recreate them.
 
 Exceptions: **install Cursor**, **create/open an empty project folder**, and **GitHub setup** (Lessons 02, 04, 11–12) — those are setup steps outside the editor.
 
+**Early win:** Lesson 02 includes a first prompt so readers see Cursor build a page immediately after install. Lessons 06–08 refine that page (HTML, CSS, JS).
+
 ## NextDoor workflow
 
 - **Public site:** lesson reference pages only (no ND paste boxes on pages)
@@ -92,7 +94,7 @@ hello-world/
 | 03 | Pick a real purpose | `lessons/03-pick-a-purpose.html` | Done |
 | 04 | Open first project | `lessons/04-open-project.html` | Done |
 | 05 | Plan the files | `lessons/05-plan-files.html` | Done |
-| 06 | Create first HTML | `lessons/06-first-html.html` | Done |
+| 06 | Improve HTML | `lessons/06-first-html.html` | Done |
 | 07 | Add CSS | `lessons/07-add-css.html` | Done |
 | 08 | JavaScript countdown | `lessons/08-countdown-js.html` | Not started |
 | 09 | Preview locally | `lessons/09-preview.html` | Not started |

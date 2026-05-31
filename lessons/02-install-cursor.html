@@ -19,7 +19,7 @@
     gtag('js', new Date());
     gtag('config', 'G-291QNWCB1H');
   </script>
-  <meta name="description" content="Lesson 2: Download and install Cursor from the official site. Skip this lesson if you already have Cursor installed.">
+  <meta name="description" content="Lesson 2: Install Cursor, choose a plan, run your first prompt, and see a Days until the 2026 Midterms page in your browser.">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/lesson.css">
 </head>
@@ -28,7 +28,7 @@
     <p class="eyebrow"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Hello World</a></p>
     <p class="lesson-num">Lesson 02</p>
     <h1>Download &amp; install Cursor</h1>
-    <p class="lesson-goal">Get Cursor on your computer from the official website. Already installed? Skip to Lesson 03.</p>
+    <p class="lesson-goal">Install Cursor, then run your first prompt — and see a midterm page appear in the browser.</p>
   </header>
 
   <main class="container">
@@ -102,6 +102,61 @@
       <div class="practice-note">
         <strong>Good practice:</strong> Treat Cursor like any software you install — official source only,
         read prompts before clicking, and decline anything that looks unrelated to installing an editor.
+      </div>
+
+      <h2>Your first prompt — see the benefit of Cursor</h2>
+      <p>
+        Install is only step one. The real payoff is asking Cursor to build something in plain English
+        and seeing a web page appear. We do that now — a simple first version you will improve in later lessons.
+      </p>
+
+      <div class="approach-note">
+        <strong>How this series works:</strong> Cursor creates all the code. You paste the prompt below,
+        review what Cursor proposes, and accept when it looks right. This page explains what happened —
+        you do not type HTML yourself.
+      </div>
+
+      <h3>Step 1 — Prepare an empty project folder</h3>
+      <p>
+        Cursor needs one folder open on your computer. Create an empty folder first (this is a one-time setup step,
+        not code):
+      </p>
+      <ul>
+        <li><strong>Windows:</strong> for example <code>C:\Users\YourName\Projects\hello-world</code></li>
+        <li><strong>Mac:</strong> for example <code>/Users/YourName/Projects/hello-world</code></li>
+      </ul>
+      <p>
+        In Cursor: <strong>File → Open Folder…</strong> (or <strong>Open project</strong> on the welcome screen)
+        and select that empty folder.
+      </p>
+
+      <h3>Step 2 — Paste this prompt in Chat</h3>
+      <blockquote class="chat-prompt">
+        Create a file named index.html in this project. It should be a simple web page with
+        “Days until the 2026 Midterms” as the main heading at the top of the page.
+        Use plain HTML only — no CSS and no JavaScript yet.
+      </blockquote>
+      <ol>
+        <li>Open <strong>Chat</strong> with your project folder open.</li>
+        <li>Paste the prompt above.</li>
+        <li>Review Cursor’s proposal. Accept when you see a single new <code>index.html</code> — reject extra files if offered.</li>
+        <li>Double-click <code>index.html</code> in Explorer, or open it in your browser. You should see your heading on the page.</li>
+      </ol>
+
+      <figure class="figure">
+        <img src="../assets/lessons/06/hello-world-first-look.png"
+             alt="Simple web page in the browser showing Days until the 2026 Midterms as the main heading">
+        <figcaption>Your first result — plain HTML from one Cursor prompt. Styling and the live countdown come in later lessons.</figcaption>
+      </figure>
+
+      <p>
+        <strong>That is the benefit of Cursor:</strong> you describe what you want; it writes the file.
+        Lessons 03–12 explain the plan, improve the page, and publish it on GitHub Pages.
+      </p>
+
+      <div class="practice-note">
+        <strong>Good practice:</strong> Read <code>index.html</code> after Cursor creates it — even a short file.
+        If something looks wrong, ask Cursor to fix it before you accept.
       </div>
 
       <nav class="lesson-nav" aria-label="Lesson navigation">

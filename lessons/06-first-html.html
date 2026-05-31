@@ -10,7 +10,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson 06 — Create your first HTML · Hello World</title>
+  <title>Lesson 06 — Improve your HTML · Hello World</title>
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-291QNWCB1H"></script>
   <script>
@@ -19,7 +19,7 @@
     gtag('js', new Date());
     gtag('config', 'G-291QNWCB1H');
   </script>
-  <meta name="description" content="Lesson 6: Ask Cursor to create index.html, then understand the structure of your midterm countdown page.">
+  <meta name="description" content="Lesson 6: Ask Cursor to improve index.html from Lesson 02 — countdown placeholder, election date — then understand the HTML.">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/lesson.css">
 </head>
@@ -27,8 +27,8 @@
   <header class="page-header lesson-header">
     <p class="eyebrow"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Hello World</a></p>
     <p class="lesson-num">Lesson 06</p>
-    <h1>Create your first HTML</h1>
-    <p class="lesson-goal">Ask Cursor to create index.html — then learn what each part does.</p>
+    <h1>Improve your HTML</h1>
+    <p class="lesson-goal">Ask Cursor to improve your HTML — then learn what each part does.</p>
   </header>
 
   <main class="container">
@@ -39,15 +39,16 @@
 
     <article class="card lesson-body">
       <div class="approach-note">
-        <strong>How this series works:</strong> Cursor writes the HTML. You run the prompt, review, and accept.
-        The sections below explain <strong>what Cursor created</strong> — you do not need to type this code yourself.
+        <strong>How this series works:</strong> You created a first page in Lesson 02. Now we ask Cursor to
+        improve it. The sections below explain <strong>what Cursor changed</strong> — you do not type this code yourself.
       </div>
 
       <h2>What HTML does</h2>
       <p>
         HTML is the <strong>structure</strong> of a web page: headings, paragraphs, and placeholders
         for content. It is not styling (that is CSS, Lesson 07) or the live day count (JavaScript, Lesson 08).
-        Today we create one file: <code>index.html</code> in the <strong>root</strong> of your project.
+        Today we ask Cursor to <strong>improve</strong> the <code>index.html</code> from Lesson 02 — add a
+        placeholder for the countdown number and the election date, ready for CSS and JavaScript later.
       </p>
       <p>
         <strong>Why <code>index.html</code>?</strong> Browsers treat it as the <strong>home page</strong>
@@ -71,28 +72,26 @@
         <code>css</code> and <code>js</code>, not inside them.
       </p>
 
-      <h2>Ask Cursor to create the file</h2>
+      <h2>Ask Cursor to improve the page</h2>
       <p>
-        For this step, <strong>we ask Cursor to write the HTML</strong>. You review it before you accept.
+        For this step, <strong>we ask Cursor to update your HTML</strong>. You review before you accept.
       </p>
       <ol>
-        <li>Open your <code>hello-world</code> project in Cursor (Lesson 04).</li>
-        <li>Open <strong>Chat</strong> with the project folder open.</li>
+        <li>Open your <code>hello-world</code> project — you should already have <code>index.html</code> from Lesson 02.</li>
+        <li>Open <strong>Chat</strong>.</li>
         <li>Paste or adapt this prompt:</li>
       </ol>
 
       <blockquote class="chat-prompt">
-        Create a file named index.html in the main project folder (same level as css and js — not inside them).
-        It should be a simple midterm countdown page:
-        a main heading “Days until the 2026 midterms”, a paragraph with id="days-remaining" showing a dash
-        for now, and a line with the election date Tuesday, November 3, 2026. Use plain HTML only —
-        no CSS file and no JavaScript yet.
+        Update index.html for my midterm countdown page: keep “Days until the 2026 Midterms” as the main heading,
+        add a paragraph with id="days-remaining" showing a dash for now, and a line with the election date
+        Tuesday, November 3, 2026. Plain HTML only — no CSS or JavaScript yet.
       </blockquote>
 
       <ol start="4">
         <li>Read what Cursor proposes. Reject extra files (CSS, JS, config) if they appear — those come later.</li>
-        <li>Accept when you have a single new <code>index.html</code> next to <code>css</code> and <code>js</code>.</li>
-        <li>In Explorer, confirm the file appears next to your <code>css</code> and <code>js</code> folders.</li>
+        <li>Accept when <code>index.html</code> is updated and still in the main project folder.</li>
+        <li>In Explorer, confirm you still have one <code>index.html</code> at the top level of the project.</li>
       </ol>
 
       <h2>Understand what Cursor created</h2>
@@ -124,7 +123,7 @@
       <figure class="figure">
         <img src="../assets/lessons/06/hello-world-first-look.png"
              alt="Bare-bones index.html open in the browser — heading, dash placeholder, and election date">
-        <figcaption>Your first <code>index.html</code> in the browser — plain and unstyled is OK for Lesson 06</figcaption>
+        <figcaption>Your page after Lesson 06 — still plain HTML; styling comes in Lesson 07</figcaption>
       </figure>
 
       <h2>Quick peek in the browser</h2>
