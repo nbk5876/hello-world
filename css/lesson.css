@@ -138,6 +138,12 @@
   margin: 16px 0;
 }
 
+.figure.figure-half {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .figure img {
   display: block;
   max-width: 100%;
