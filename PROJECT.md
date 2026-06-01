@@ -65,6 +65,16 @@ Exceptions: **install Cursor**, **create/open an empty project folder**, and **G
 - **First diagram:** `docs/visio/image-workspace.vsdx`
 - **For lesson pages:** export PNG from Visio → `assets/lessons/NN/` (commit those exports)
 
+## Favicons
+
+- **Folder:** `favicon/` (project root)
+- **Source:** [realfavicongenerator.net](https://realfavicongenerator.net) zip — unzip **into** `favicon/` (files sit directly in that folder, not `favicon/favicon/`)
+- **Expected files:** `favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`, `apple-touch-icon.png`, `site.webmanifest`, etc.
+- **HTML paths (GitHub Pages project site):**
+  - From `index.html`: `favicon/favicon.ico`, `favicon/apple-touch-icon.png`, …
+  - From `lessons/*.html`: `../favicon/favicon.ico`, `../favicon/apple-touch-icon.png`, …
+- **Note:** Edit `site.webmanifest` icon paths if they use `/` — they should be relative to the site root (`favicon/...` or `/hello-world/favicon/...`)
+
 ## Project layout
 
 ```
@@ -75,6 +85,7 @@ hello-world/
 ├── css/style.css           # Site styles
 ├── css/lesson.css          # Lesson page styles
 ├── js/countdown.js         # Days until Nov 3, 2026
+├── favicon/                # Favicons from realfavicongenerator.net (public)
 ├── nd-posts/               # ND drafts (gitignored, local only)
 ├── docs/visio/             # Visio .vsdx (gitignored, local only)
 ├── README.md               # Setup instructions
@@ -118,12 +129,13 @@ Only commit when explicitly requested.
 
 1. Create `lessons/NN-topic.html` (copy structure from Lesson 01)
 2. Add Google Analytics snippet in `<head>`
-3. Add screenshot(s) to `assets/lessons/NN/` if available
-4. Link from `index.html` (change `coming-soon` → `is-live` with href)
-5. Create `nd-posts/lesson-NN-nextdoor.txt` (local only, do not commit)
-6. Add a **Good practice** callout (`practice-note` class) where helpful — for all readers, not RAI-only
-7. Add **Cursor creates / you understand** framing (`approach-note`) on coding lessons (05–08+)
-8. Commit and push public files
+3. Add favicon `<link>` tags (see **Favicons** — use `../favicon/` from lesson pages)
+4. Add screenshot(s) to `assets/lessons/NN/` if available
+5. Link from `index.html` (change `coming-soon` → `is-live` with href)
+6. Create `nd-posts/lesson-NN-nextdoor.txt` (local only, do not commit)
+7. Add a **Good practice** callout (`practice-note` class) where helpful — for all readers, not RAI-only
+8. Add **Cursor creates / you understand** framing (`approach-note`) on coding lessons (05–08+)
+9. Commit and push public files
 
 ## Local workspace
 
