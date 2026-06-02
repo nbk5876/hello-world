@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- -------------------------------------------------------------
+ Page Name: 08-countdown-js.html
+ Purpose:    Lesson 08 reference — Add JavaScript countdown
+ Series:     Use Cursor to Say Hello World
+ URL:        https://nbk5876.github.io/hello-world/lessons/08-countdown-js.html
+ Created:    5/30/2026
+-------------------------------------------------------------- -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 08 — Add JavaScript · Hello World</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-291QNWCB1H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-291QNWCB1H');
+  </script>
+  <meta name="description" content="Lesson 8: Add js/countdown.js and link it from index.html — make the midterm day count update automatically.">
+  <link rel="icon" href="../favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon" href="../favicon/apple-touch-icon.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lesson.css">
+</head>
+<body>
+  <header class="page-header lesson-header">
+    <p class="eyebrow"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Hello World</a></p>
+    <p class="lesson-num">Lesson 08</p>
+    <h1>Add JavaScript — the countdown</h1>
+    <p class="lesson-goal">Make the day count live — link <code>js/countdown.js</code> from <code>index.html</code> and replace the dash with a real number.</p>
+  </header>
+
+  <main class="container">
+    <div class="audience-tags" aria-label="NextDoor groups">
+      <span class="audience-tag rai">Responsible AI</span>
+      <span class="audience-tag npc">National Politics Chat</span>
+    </div>
+
+    <article class="card lesson-body">
+      <div class="approach-note">
+        <strong>How this series works:</strong> Cursor creates <code>js/countdown.js</code> and adds the
+        <code>&lt;script&gt;</code> tag in <code>index.html</code>. You run the prompt and review. The sections
+        below help you <strong>understand</strong> what Cursor built.
+      </div>
+
+      <h2>What JavaScript does here</h2>
+      <p>
+        JavaScript is the <strong>behavior</strong> of your page. HTML (Lesson 06) holds the structure;
+        CSS (Lesson 07) handles the look. JavaScript calculates how many days remain until
+        <strong>Tuesday, November 3, 2026</strong> and writes that number into the paragraph with
+        <code>id="days-remaining"</code> — the placeholder dash from Lesson 06.
+      </p>
+      <p>
+        See the working example on the home page:
+        <a href="../index.html">nbk5876.github.io/hello-world/</a>
+      </p>
+
+      <h2>How HTML connects to JavaScript</h2>
+      <p>
+        Your HTML file must <strong>include one line</strong> near the end of the body that tells the
+        browser to load your script. It looks like this:
+      </p>
+
+      <pre class="file-tree"><code>&lt;script src="js/countdown.js"&gt;&lt;/script&gt;</code></pre>
+
+      <p>
+        <strong>You do not need to type this yourself.</strong> In the next section we ask Cursor to add it
+        to <code>index.html</code> when it creates <code>js/countdown.js</code>. Your job is to
+        <strong>check</strong> that the line appears just before <code>&lt;/body&gt;</code> and that
+        <code>src="js/countdown.js"</code> matches your folder name from Lesson 05 — lowercase
+        <code>js</code>, file named <code>countdown.js</code> inside it.
+      </p>
+
+      <h2>Ask Cursor to add the countdown</h2>
+      <p>
+        For this step, <strong>we ask Cursor to create the JavaScript file</strong> and update
+        <code>index.html</code> with the script line above. You review before you accept.
+      </p>
+      <ol>
+        <li>Open your project with <code>index.html</code> from Lessons 06 and 07.</li>
+        <li>Open <strong>Chat</strong>.</li>
+        <li>Paste or adapt this prompt:</li>
+      </ol>
+
+      <blockquote class="chat-prompt">
+        Create js/countdown.js with plain JavaScript (no libraries) that calculates days until
+        Tuesday, November 3, 2026 and displays the number in the element with id="days-remaining".
+        If today is election day, show "Today". If the date has passed, show "Past".
+        Add &lt;script src="js/countdown.js"&gt;&lt;/script&gt; just before the closing &lt;/body&gt; tag in index.html.
+      </blockquote>
+
+      <ol start="4">
+        <li>Confirm Cursor creates only <code>js/countdown.js</code> and a small edit to <code>index.html</code> — not extra files.</li>
+        <li>Accept when the script path is exactly <code>js/countdown.js</code>.</li>
+        <li>Refresh your page in the browser — the dash should become a number.</li>
+      </ol>
+
+      <h2>Understand the JavaScript Cursor created</h2>
+      <p>After you accept Cursor’s changes, your script might look like this — for learning, not for retyping:</p>
+
+      <pre class="file-tree"><code>(function () {
+  var electionDay = new Date("2026-11-03T00:00:00");
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  var msPerDay = 1000 * 60 * 60 * 24;
+  var daysLeft = Math.ceil((electionDay - today) / msPerDay);
+
+  var el = document.getElementById("days-remaining");
+  if (!el) return;
+
+  if (daysLeft &gt; 0) {
+    el.textContent = daysLeft;
+  } else if (daysLeft === 0) {
+    el.textContent = "Today";
+  } else {
+    el.textContent = "Past";
+  }
+})();</code></pre>
+
+      <h3>Lines worth knowing</h3>
+      <ul>
+        <li><strong><code>new Date("2026-11-03T00:00:00")</code></strong> — the election date JavaScript uses for math</li>
+        <li><strong><code>document.getElementById("days-remaining")</code></strong> — finds the paragraph you named in Lesson 06</li>
+        <li><strong><code>el.textContent = daysLeft</code></strong> — replaces the dash with the calculated number</li>
+        <li><strong><code>Math.ceil(...)</code></strong> — rounds up so partial days count as a full day left</li>
+        <li><strong><code>(function () { ... })();</code></strong> — runs the code once when the page loads; keeps variables private</li>
+      </ul>
+
+      <figure class="figure placeholder">
+        Screenshot: styled countdown page showing a live number instead of a dash<br>
+        <em>(Add image to assets/lessons/08/ when available)</em>
+      </figure>
+
+      <div class="practice-note">
+        <strong>Good practice:</strong> If the number does not appear, check two things: the
+        <code>id="days-remaining"</code> in HTML must match exactly what the script looks for, and the
+        <code>&lt;script src="js/countdown.js"&gt;</code> path must point to the right file. Refresh the
+        browser after you accept changes — JavaScript does not update until the page reloads.
+      </div>
+
+      <nav class="lesson-nav" aria-label="Lesson navigation">
+        <a href="07-add-css.html">← Previous: Add CSS</a>
+        <a class="home-link" href="../index.html">All lessons</a>
+        <a href="09-preview.html">Next: Preview in your browser →</a>
+      </nav>
+    </article>
+
+    <footer class="site-footer">
+      <p>Built with <a href="https://cursor.com" target="_blank" rel="noopener">Cursor</a> · Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+    </footer>
+  </main>
+</body>
+</html>
